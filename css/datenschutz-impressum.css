@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+#htag{
+			color: green;
+			text-align: center;
+			font-size: 27px;
+		}
+		article{
+			margin: 100px;
+			height: 700px;
+			color: black;
+			padding-left: 5%;
+			padding-right: 5%;
+			box-sizing: border-box;
+			border: auto solid red;
+			}
+		

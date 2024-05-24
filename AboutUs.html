@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--icons-->
+	<link href="fonts/font-awesome621/css/all.css" rel="stylesheet">
+	<link href="css/AboutUs.css" rel="stylesheet">
+</head>
+<body>
+	<main>
+	<header>
+		<input type="checkbox" name="checkbox" id="toggler">
+		<label for="toggler" class="fas fa-bars"></label>
+	    <a href="#" class="logo">Blossoming<span class="fa-solid fa-seedling"></span></a>
+	     <nav class="navbar">
+		    <a href="index.html">Home</a>
+		    <a href="picks.html">Gallery</a>
+		    <a href="AboutUs.html">About</a>
+		    <a href="contact.html">Contact</a>
+		    
+		</nav>
+		<div class="icons">
+			<a href="#"><span class="fa-solid fa-user"></span></a>
+			 <a href="#"><span class="fa-brands fa-gratipay"></span></a>
+			 <a href="#"><span class="fa-solid fa-cart-shopping"></span></a>
+		</div>
+	</header>
+	<!--------theorey part----->
+	<div class="section1">
+	<div class="container1">
+		<div class="content-section">
+		 <div class="title">
+			 <h1>Lorem ipsum dolor.</h1>
+			</div>
+			<div class="content">
+			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, sunt!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo soluta, praesentium voluptate in, quos voluptatem, aut inventore ea deserunt quibusdam nulla mollitia minus fugiat laboriosam? Maiores quasi voluptatem ducimus, a ipsa illo. Porro laborum sint earum. Alias pariatur neque, facilis atque quibusdam ipsa veritatis a cumque. Ipsa totam quo veniam.</p>
+				<div class="read">
+					<a href="#">Read More</a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<!----- adding photos on right side------>
+	
+	
+	<section class="section">
+	<div class="slider">
+	  <div class="slide">
+		  <input type="radio" name="radio-btn" id="radio1">
+		  <input type="radio" name="radio-btn" id="radio2">
+		  <input type="radio" name="radio-btn" id="radio3">
+		  <input type="radio" name="radio-btn" id="radio4">
+		  
+		  <div class="st first">
+			  <!--image from Alexa on Pixabay-->
+		     <img src="images-pixabay/dahlia-g3344e66cd_1280.jpg" alt="">
+		  </div>
+		  <div class="st">
+			  <!--Image of 👀 Mabel Amber, who will one day from Pixabay-->
+		     <img src="images-pixabay/anemone-g31f8f7566_1280.jpg" alt="">
+		  </div>
+		  <div class="st">
+			  <!--Image by snow crunch from Pixabay -->
+		     <img src="images-pixabay/flowers-g4c4f1ead8_1280.jpg" alt="">
+		  </div>
+		  <div class="st">
+			  <!--Bild von Hong Zhang auf Pixabay -->
+		     <img src="images-pixabay/lotus-g7c3d89a8a_1280.jpg" alt="">
+		  </div>
+		  <div class="nav-auto">
+		     <div class="a-b1"></div>
+		     <div class="a-b2"></div>
+		     <div class="a-b3"></div>
+		     <div class="a-b4"></div>
+		  </div>
+		</div>
+		<div class="nav-m">
+		  <label for="radio1" class="m-btn"></label>
+		  <label for="radio2" class="m-btn"></label>
+		  <label for="radio3" class="m-btn"></label>
+		  <label for="radio4" class="m-btn"></label>
+		</div>
+	</div>
+	</section>
+	<script type="text/javascript">
+		var counter=1;
+		setInterval(function(){
+			document.getElementById?('radio' + counter).checked=true;
+			counter++;
+			if(counter > 4){
+				counter = 1;
+			}
+		},5000);
+	
+	</script>
+	</main>
+</body>
+</html>

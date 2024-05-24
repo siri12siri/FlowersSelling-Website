@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* CSS Document */
+/* arbutus-regular - latin */
+@font-face {
+  font-family: 'Arbutus';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/arbutus-v24-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/arbutus-v24-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/arbutus-v24-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/arbutus-v24-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/arbutus-v24-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/arbutus-v24-latin-regular.svg#Arbutus') format('svg'); /* Legacy iOS */
+}
+/* acme-regular - latin */
+/* pacifico-regular - latin */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pacifico-v22-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/pacifico-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pacifico-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pacifico-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pacifico-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pacifico-v22-latin-regular.svg#Pacifico') format('svg'); /* Legacy iOS */
+}
+		* { 
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			text-decoration: none;
+			text-transform: none;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+		html {
+			font: 1rem ,Pacifico sans-serif;
+			scroll-behavior: smooth;
+			scroll-padding-top: 6rem;
+			overflow-x: hidden;
+		}
+		h1,h2,h3,h4 {
+			font: 700 2rem Pacifico, sans-serif;
+		}
+h1{
+	font-family: 'Arbutus';
+	font-weight: 400;
+	font-size: 50px;
+}
+		h1:hover{
+			color: aliceblue;
+}
+		
+		body{
+			height: 100vh;
+			justify-self: center;
+			align-items: center;
+			background: #b491c8;
+		}
+		/* -------------------------------------------------- */
+        header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	padding: 2rem 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+} 
+header .logo{
+	font-size: 3rem;
+	color: black;
+	font-weight: bolder;
+}
+header .logo span{
+	color: green;
+}
+
+header .navbar a{
+	font-size: 2rem;
+	padding: 0 1.5rem;
+	color: #BC24D4;
+}
+header .navbar a:hover{
+	color: black;
+}
+header .icons a{
+	font-size: 2.5rem;
+	color: black;
+	margin-left: 1.5rem;
+} 
+header .icons a:hover{
+	color: black;
+}
+header #toggler{
+	display: none;
+}
+header .fa-bars{
+	font-size: 3rem;
+	color: #333;
+	border-radius: .5rem;
+	padding: .5rem 1.5rem;
+	cursor: pointer;
+	border: .1rem solid rgba(0,0,0,0.3);
+	display: none;
+}
+
+/* media */
+@media (max-width:991px){
+	html{
+		font-size: 55%;
+	}
+	header{
+		padding: 2rem;
+	}
+	section{
+		padding: 2rem;
+	}
+	.home{
+		background-position: left;
+	}
+}
+
+@media (max-width:768px){
+      header .fa-bars{
+		display: block;
+	}
+	header .navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #eee;
+		border-top: 1rem solid rgba(0,0,0,.1);
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	header #toggler:checked ~ .navbar{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+	header .navbar a{
+		margin: 1.5rem;
+		padding: 1.5rem;
+		background: #fff;
+		border: 1rem solid rgba(0,0,0,.1);
+		display: block;
+	}
+}
+@media (max-width:450px){
+	html{
+		font-size: 50%;
+	}
+}
+
+		/* -------------------------------------------------- */
+		/*---  addons left side theorey----  */
+		.container1{
+			width: 80%;
+			display: block;
+			margin: auto;
+			padding-top: 100px;
+		}
+		.content-section{
+			float: left;
+			width: 45%;
+			
+		}
+		.content-section .title{
+			text-transform: uppercase;
+			margin-top: 150px;
+			font-size: 28px;
+		}
+		.content-section .content h3{
+			margin-top: 30px;
+			font-size: 21px;
+		}
+		.content-section .content p{
+			margin-top: 10px;
+			font-size: 17px;
+			line-height: 1.5;
+		}
+		.content-section .content .read{
+			margin-top: 30px;
+		}
+		.content-section .content .read a{
+			background-color: #3d3d3d;
+			padding: 12px 40px;
+			text-decoration: none;
+			color: #fff;
+			font-size: 25px;
+			letter-spacing: 1.5px;
+		}
+		.content-section .content .read a:hover{
+			background-color: #a52a2a;
+			color: #fff;
+			
+		}
+		
+	/* ------------------------*/	
+		
+		
+		
+		
+		
+		
+		
+		/* ------adding photos ------*/
+		/* slide is with out radio buttons */
+		/*  slider is included alll the elements */
+		
+		
+		.section{
+			margin: 0;
+			padding: 0;
+			height: 80vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.slider{
+			width: 800px;
+			height: 500px;
+			border-radius: 50px;
+			overflow: hidden;
+		}
+		.slide{
+			width: 500%;
+			height: 500px;
+			display: flex;
+		}
+		.slide input{
+			display: none;
+		}
+		.st{
+			float: right;
+			width: 20%;
+			transition: 1s;
+			
+		}
+		.st img{
+			width: 800%;
+			height: 500px;
+		}
+		.nav-m{
+			position: absolute;
+			width: 800px;  /*  */
+			margin-top: -40px;
+			justify-content: center;
+			display: flex;
+		}
+		.m-btn{
+			border: 2.8px solid wheat;
+			padding: 6px;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: 0.5s;
+			
+		}
+		.m-btn:not(:last-child){
+			margin-right: 30px;
+		}
+		.m-btn:hover{
+			background-color: wheat;
+		}
+		#radio1:checked ~.first{
+			margin-left: 0;
+		}
+		#radio2:checked ~.first{
+			margin-left: -20%;
+		}
+		#radio3:checked ~.first{
+			margin-left: -40%;
+		}
+		#radio4:checked ~.first{
+			margin-left: -60%;
+		}
+		.nav-auto{
+			position: absolute;
+			width: 800px;    /*  */
+			margin-top: 460px;
+			display: flex;
+			justify-content: center;
+		}
+		.nav-auto div{
+			border: 2.8px solid wheat;
+			padding: 6px;
+			border-radius: 50%; 
+			transition: 0.5s;
+			transition-timing-function: ease;
+		}
+		.nav-auto div:not(:last-child){
+			margin-right: 30px;
+			justify-content: center;
+		}
+		#radio1:checked ~ .nav-auto .a-b1{
+			background-color: wheat;
+		}
+		#radio2:checked ~ .nav-auto .a-b2{
+			background-color: wheat;
+		}
+		#radio3:checked ~ .nav-auto .a-b3{
+			background-color: wheat;
+		}
+		#radio4:checked ~ .nav-auto .a-b4{
+			background-color: wheat;
+		}
+		
+		
+		/*  ---------------- */
+		
+		
+		@media screen and (max-width: 768px){
+			.container1{
+			width: 80%;
+			display: block;
+			margin: auto;
+			padding-top: 50px;
+		}
+		    .content-section{
+				float: none;
+				width: 100%;
+				display: block;
+				margin: auto;
+			}
+			.slider{
+				float: none;
+				width: 100%;
+			}
+			.slider .st img{
+				width: 100%;
+				display: block;
+			}
+			.content-section .title{
+				text-align: center;
+				font-size: 19px;
+			}
+			.content-section .content .read{
+				text-align: center;
+			}
+			.content-section .content .read a{
+				padding: 9px 30px;
+			}
+			.nav-m{
+				width: 650px;
+				align-items: center;
+			}
+			.nav-auto{
+				width: 650px;
+				align-items: center;
+			}
+		}
+@media screen and (max-width: 450px){
+			.container1{
+			width: 95%;
+			display: block;
+			margin: auto;
+			padding-top: 5px;
+		}
+		    .content-section{
+				float: none;
+				width: 100%;
+				display: block;
+				margin: auto;
+			}
+			.slider{
+				float: none;
+				width: 800%;
+			}
+			.slider .st img{
+				width: 100%;
+				display: block;
+			}
+			.content-section .title{
+				text-align: center;
+				font-size: 1rem;
+				
+			}
+			.content-section .content .read{
+				text-align: center;
+			}
+			.content-section .content .read a{
+				padding: 9px 30px;
+			}
+			.nav-m{
+				width: 450px;
+				align-items: center;
+			}
+			.nav-auto{
+				width: 450px;
+				align-items: center;
+			}
+		}

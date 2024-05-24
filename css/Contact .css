@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+/* alegreya-regular - latin */
+@font-face {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/alegreya-v31-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/alegreya-v31-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/alegreya-v31-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/alegreya-v31-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/alegreya-v31-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/alegreya-v31-latin-regular.svg#Alegreya') format('svg'); /* Legacy iOS */
+}
+		* { 
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			text-decoration: none;
+			text-transform: none;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+		html {
+			font-family: 'Alegreya';
+            font-style: normal;
+		}
+		h1,h2,h3,h4 {
+			font-family: 'Alegreya';
+            font-style: normal;
+		}
+		header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	padding: 2rem 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+} 
+header .logo{
+	font-size: 3rem;
+	color: black;
+	font-weight: bolder;
+}
+header .logo span{
+	color: green;
+}
+
+header .navbar a{
+	font-size: 2rem;
+	padding: 0 1.5rem;
+	color: #BC24D4;
+}
+header .navbar a:hover{
+	color: black;
+}
+header .icons a{
+	font-size: 2.5rem;
+	color: black;
+	margin-left: 1.5rem;
+} 
+header .icons a:hover{
+	color: black;
+}
+header #toggler{
+	display: none;
+}
+header .fa-bars{
+	font-size: 3rem;
+	color: #333;
+	border-radius: .5rem;
+	padding: .5rem 1.5rem;
+	cursor: pointer;
+	border: .1rem solid rgba(0,0,0,0.3);
+	display: none;
+}
+		/* media */
+@media (max-width:991px){
+	html{
+		font-size: 55%;
+	}
+	header{
+		padding: 2rem;
+	}
+	section{
+		padding: 2rem;
+	}
+	.home{
+		background-position: left;
+	}
+}
+
+@media (max-width:768px){
+      header .fa-bars{
+		display: block;
+	}
+	header .navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #eee;
+		border-top: 1rem solid rgba(0,0,0,.1);
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	header #toggler:checked ~ .navbar{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+	header .navbar a{
+		margin: 1.5rem;
+		padding: 1.5rem;
+		background: #fff;
+		border: 1rem solid rgba(0,0,0,.1);
+		display: block;
+	}
+}
+@media (max-width:450px){
+	html{
+		font-size: 50%;
+	}
+}
+/*------------------------------------------------------------------------------------------ */
+		.container{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-image: url("../images-pixabay/daisy-gfc607c5c9_1920.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			
+		}
+		.container .form-container{
+			padding: 40px 50px 40px 50px;
+	/*		background-image: linear-gradient(45deg, #56ab2f, #a8e063);  -----*/
+			border-radius: 10px;
+			box-shadow: 0 0 10px 0 ;
+		}
+		.container .form-container .heading h1{
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 35px;
+			margin-bottom: 20px;
+			color: #fff;
+		}
+		.container .form-container .inputbox input{
+			background: transparent;
+			width: 100%;
+			border: none;
+			border-bottom: 2px solid rgba(255,255,255,0.24);
+			color: #fff;
+			margin-bottom: 20px;
+			margin-right: 30px;
+			font-size: 13px;
+			padding: 4px 0px 4px 25px;
+			height: 33px;
+			transition: 0.8s all;
+		}
+		.container .form-container .inputbox textarea{
+			background: transparent;
+			width: 100%;
+			border: none;
+			border-bottom: 2px solid rgba(255,255,255,0.24);
+			color: #fff;
+			margin-bottom: 20px;
+			font-size: 13px;
+			padding: 4px 0px 4px 25px;
+			transition: 0.8s all;
+		}
+		.container .form-container .inputbox input:focus,
+		.container .form-container .inputbox textarea:focus{
+			outline: none;
+			border-color: #fff;
+		}
+		.container .form-container .inputbox{
+			position: relative;
+		}
+		.container .form-container .inputbox .icon{
+			position: absolute;
+			height: 33px;
+			color: #fff;
+			line-height: 33px;
+		}
+		.container .form-container .center button{
+			border: none;
+			outline: none;
+			width: 100%;
+			background: #fff;
+			color: #555;
+			height: 40px;
+			font-size: 15px;
+			text-transform: uppercase;
+			font-weight: bold;
+			cursor: pointer;
+			
+		}  
+		
+		
+		
+		
+		
+		
+		
+			
+  	
